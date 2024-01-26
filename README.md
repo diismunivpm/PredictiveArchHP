@@ -17,7 +17,7 @@ Each of the three available archetypes consists of two files .py:
      
 # Revision history
 Oct 25, 2023
-•	First version
+   First version
 
 # References
 Mugnini A., Evans M., Arteconi A. (2023). HeatPumpsOptControl: Archetypes of Model Predictive Control for real Heat Pumps
