@@ -20,7 +20,9 @@ Oct 25, 2023
    First version
 
 # References
-Mugnini A., Evans M., Arteconi A. (2023). HeatPumpsOptControl: Archetypes of Model Predictive Control for real Heat Pumps
+Please cite PredictiveArchHP using the information below:
+
+Mugnini A., Evens M., Arteconi A., Model predictive controls for residential buildings with heat pumps: Experimentally validated archetypes to simplify the large-scale application, Energy and Buildings., Volume 320, 2024, 114632, ISSN 0378-7788, doi.org/10.1016/j.enbuild.2024.114632
 
 # Acknowledgment
 The implementation and validation of the archetypes was made possible by a grant for a scientific stay in Flanders funded by Research Foundation Flanders - FWO.
