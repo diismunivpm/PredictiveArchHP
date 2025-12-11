@@ -11,7 +11,9 @@ Archetypes are based on grey-box models. In the uploaded version of HeatPumpsOpt
 The effectiveness of archetypes has been validated through experimental tests.
 
 # Dependencies
-PredictiveArchHP is implemented in Python 3.9 and uses the packages os, numpy, pandas, xlsxwriter, which are all generally available. Moreover, PredictiveArchHP need GEKKOOptimizationSuite (gekko.readthedocs.io/en/latest/).
+PredictiveArchHP is implemented in Python 3.9 and uses the packages os, numpy, pandas, xlsxwriter, which are all generally available. Moreover, PredictiveArchHP need GEKKOOptimizationSuite* (gekko.readthedocs.io/en/latest/).
+
+*Beal L.D.R., Hill D.C., Martin R.A., Hedengren J.D. 2018. GEKKO Optimization Suite. Processes, 6, 106. https://doi.org/10.3390/pr6080106
 
 # Structure of each archetype
 Each of the four available archetypes consists of two files .py:
