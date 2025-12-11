@@ -23,10 +23,8 @@ Each of the four available archetypes consists of two files .py:
      - For archetype 4: ClimateData_TypWeek_no_price.xlsx
     	
 # Revision history
-Oct 25, 2023
-   First version
-Dec 11, 2025
-   Loading new archetype 4
+- Oct 25, 2023: First version (Archetypes 1, 2 and 3)
+- Dec 11, 2025: Loading new Archetype 4
    
 # References
 Please cite PredictiveArchHP using the information below:
