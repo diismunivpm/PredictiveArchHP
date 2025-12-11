@@ -4,26 +4,36 @@ PredictiveArchHP contains advanced control archetypes (i.e., Model Predictive Co
 Three different archetypes, depending on the type of heating system, are available. 
   1. Archetype 1: MPC for Heat Pump with low temperature radiators.
   2. Archetype 2: MPC for Heat Pump with low temperature radiators and a hot water tank as sensible Thermal Energy Storage.
-  3. Archetype 3: MPC for Heat Pump with underfloor heating. Archetypes are based on grey-box models. In the uploaded version of HeatPumpsOptControl, reference is made to a typical Belgian residential building, however, the models can easily be adapted for other case studies. Different performances curves can be easily incorporated to model different HPs. In the uploaded version of PredictiveArchHP the HP is a real water-water HP.
+  3. Archetype 3: MPC for Heat Pump with underfloor heating. 
+  4. Archetype 4 (new): MPC for Heat Pump with underfloor heating and a hot water tank as sensible Thermal Energy Storage.
+
+Archetypes are based on grey-box models. In the uploaded version of HeatPumpsOptControl, reference is made to a typical Belgian residential building, however, the models can easily be adapted for other case studies. Different performances curves can be easily incorporated to model different HPs. In the uploaded version of PredictiveArchHP the HP is a real water-water HP.
 The effectiveness of archetypes has been validated through experimental tests.
 
 # Dependencies
 PredictiveArchHP is implemented in Python 3.9 and uses the packages os, numpy, pandas, xlsxwriter, which are all generally available. Moreover, PredictiveArchHP need GEKKOOptimizationSuite (gekko.readthedocs.io/en/latest/).
 
 # Structure of each archetype
-Each of the three available archetypes consists of two files .py:
+Each of the four available archetypes consists of two files .py:
   1.	MPC.py -> allows the control settings to be defined (forecast interval, intervals granted to the air temperature, initial conditions of decision variables and states) and collects the control actions to be sent to the controlled Heat Pump.
-  2.	AuxiliaryFunctions.py -> contains all functions for modelling the dynamic behaviour of the building (via a grey box model with concentrated parameters), the dynamic variability of Heat Pump performance (via polynomial regression) and the implementation and solution of the optimisation problem. Each archetype also contains an .xlsx file with the climate data forecast (ClimateData_TypWeek.xlsx in the current version).
-     
+  2.	AuxiliaryFunctions.py → contains all functions for modeling the dynamic behavior of the building (via a grey-box model with lumped parameters), the dynamic variability of Heat Pump performance (via polynomial regression), and the implementation and solution of the optimization problem. Each archetype also includes an .xlsx file with the climate forecast data:
+     - For archetypes 1, 2, and 3: ClimateData_TypWeek.xlsx
+     - For archetype 4: ClimateData_TypWeek_no_price.xlsx
+    	
 # Revision history
 Oct 25, 2023
    First version
-
+Dec 11, 2025
+   Loading new archetype 4
+   
 # References
 Please cite PredictiveArchHP using the information below:
 
 Mugnini A., Evens M., Arteconi A., Model predictive controls for residential buildings with heat pumps: Experimentally validated archetypes to simplify the large-scale application, Energy and Buildings., Volume 320, 2024, 114632, ISSN 0378-7788, doi.org/10.1016/j.enbuild.2024.114632
 
+(This paper contains the details of archetypes 1, 2, and 3, in preparation as a reference for archetype 4)
+
+
 # Acknowledgment
-The implementation and validation of the archetypes was made possible by a grant for a scientific stay in Flanders funded by Research Foundation Flanders - FWO.
+The implementation and validation of the archetypes 1,2 and 3 was made possible by a grant for a scientific stay in Flanders funded by Research Foundation Flanders - FWO.
 
