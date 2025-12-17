@@ -31,7 +31,7 @@ Please cite PredictiveArchHP using the information below:
 
 Mugnini A., Evens M., Arteconi A., Model predictive controls for residential buildings with heat pumps: Experimentally validated archetypes to simplify the large-scale application, Energy and Buildings., Volume 320, 2024, 114632, ISSN 0378-7788, doi.org/10.1016/j.enbuild.2024.114632
 
-(This paper contains the details of archetypes 1, 2, and 3, in preparation as a reference for archetype 4)
+(This paper is the reference for Archetypes 1, 2, and 3. The reference for Archetype 4 is in preparation)
 
 
 # Acknowledgment
